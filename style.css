@@ -12,7 +12,6 @@ img {
   text-align: center;
   font-size: 0.5em!important;
   text-align: left!important;
-  display: inline-block;
 }
 
 .b-teal {
@@ -34,6 +33,7 @@ body, head {
   background-size: cover;
   text-align: center!important;
   font-family: 'Poiret One', cursive;
+  font-weight: 900!im;
 }
 
 .head {
@@ -55,15 +55,14 @@ h1.cont {
 .card {
   background-color: black!important;
   color: white;
-  height: 250px;
-  line-height: 83px;
+  height: 400px;
+  line-height: 50px!important;
   width: 100px;
-  margin-left: 200px;
-  display: inline-block;
+  margin-left: 15px;
 }
 
-.dif {
-  line-height: 50px;
+.card > p {
+  font-size: 1.5em!important;
 }
 
 ::selection {

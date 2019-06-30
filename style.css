@@ -14,6 +14,10 @@ img {
   text-align: left!important;
 }
 
+.b-teal::selection {
+  color: red!important;
+}
+
 .b-teal {
   background-color: teal;
   float: left;
@@ -33,7 +37,8 @@ body, head {
   background-size: cover;
   text-align: center!important;
   font-family: 'Poiret One', cursive;
-  font-weight: 900!im;
+  font-weight: 900!important;
+  padding-bottom: 5px;
 }
 
 .head {
@@ -53,12 +58,10 @@ h1.cont {
 }
 
 .card {
-  background-color: black!important;
   color: white;
-  height: 400px;
-  line-height: 50px!important;
-  width: 100px;
-  margin-left: 15px;
+  background-color: black;
+  margin-top: 7px;
+  line-height: 50px;
 }
 
 .card > p {
@@ -66,6 +69,50 @@ h1.cont {
 }
 
 ::selection {
-  background-color: red;
-  color: dodgerblue;
+  color: #ffc107;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  height: 25px!important;
+  max-height: 45px;
+}
+
+::-webkit-scrollbar-button {
+  color: red;
+  background-color: green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: teal;
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon2.png);
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon4.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url(down.png);
+  background-size: cover;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(up.png);
+    background-size: cover;
 }
